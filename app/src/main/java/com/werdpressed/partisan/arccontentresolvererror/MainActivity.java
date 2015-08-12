@@ -152,8 +152,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(mIntent, getString(R.string.action_share)));
     }
 
+    //Main Error occurs here. Please see http://stackoverflow.com/questions/30192327/using-contentresolver-to-write-to-external-files-chrome-arc for more details.
     private void saveTask() {
         try {
+            //Below line specifically.
             OutputStream outputStream = getContentResolver().openOutputStream(Uri.parse(mEditorFragment.getUri()));
             outputStream.write(mEditorFragment.getEditTextContent().getBytes());
             outputStream.close();
