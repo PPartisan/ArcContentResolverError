@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Arc ContentResolver Error Demo</string>
+
+    <string name="action_load">Load</string>
+    <string name="action_save">Save</string>
+    <string name="action_share">Share</string>
+
+    <string name="cannot_locate_file">Error: Cannot Locate File</string>
+    <string name="cannot_read_file">Error: Cannot Read File</string>
+    <string name="editor_fragment_null">Error: mEditorFragment is null</string>
+
+    <string name="success_save_task">Success: Save Task</string>
+    <string name="fail_save_task">Error: Save Task Failed</string>
+
+    <string name="chrome_book_fail_generic">Error: This only fails on ChromeBook</string>
+</resources>
